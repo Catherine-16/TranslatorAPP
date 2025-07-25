@@ -5,7 +5,7 @@ const App = () => {
   const [inputText, setInputText] = useState("");
   const [translatedText, setTranslatedText] = useState("");
   const [sourceLang, setSourceLang] = useState("en");
-  const [targetLang, setTargetLang] = useState("ig");
+  const [targetLang, setTargetLang] = useState("ig", "yo");
   const [loading, setLoading] = useState(false);
 
   const translateText = async () => {
@@ -59,6 +59,7 @@ const App = () => {
           To:
           <select value={targetLang} onChange={(e) => setTargetLang(e.target.value)}>
             <option value="ig">Igbo</option>
+            <option value="yo">Yoruba</option>
 
           </select>
         </label>
